@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gen{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background-color: #87ceeb;
+    animation: back 3s infinite linear;
+    
+}
+@keyframes back {
+    25%{
+        background-color: #c0dee9;
+    }
+    50%{
+        background-color: #94a7ae;
+    }
+    75%{
+        background-color: #464f52;
+    }
+    100%{
+        background-color: #232829;
+    }
+}
+@keyframes sun {
+    25%{
+        background-color: #fab803;
+        box-shadow: #ff8d00;
+    }
+    50%{
+        background-color: #daa52058;
+        box-shadow: none;
+
+    }
+    75%{
+        background-color: #464f52;
+        box-shadow: none;
+    }
+    100%{
+        background-color: #ffffff;
+        box-shadow: none;
+    }
+}
+.city img{
+    width: 100%;
+}
+.road img{
+    width: 100%;
+}
+.car img{
+    width: 100%;
+}
+.city{
+    width: 1400px;
+    position: absolute;
+    
+    
+}
+.road{
+    width: 1500px;
+    position: absolute;
+    top: 608px;
+}
+ .car{
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    animation: car 3s  infinite linear;
+ }
+ .circle{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 75px #ff8d00;
+    background-color: #ffff00;
+    animation: sun 3s infinite;
+ }
+ 
+@keyframes car {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1500px);
+    }
+}
